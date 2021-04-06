@@ -1,0 +1,11 @@
+xmlreader/domain/Problem.class
+xmlreader/domain/Header.class
+xmlreader/domain/ProblemsWithSymbols.class
+xmlreader/domain/Report.class
+xmlreader/domain/Symbol.class
+xmlreader/domain/Library.class
+DatabaseConnector.class
+LLVMLibDiffFinder.class
+xmlreader/domain/ProblemsWithTypes.class
+xmlreader/domain/Type.class
+xmlreader/domain/Change.class
