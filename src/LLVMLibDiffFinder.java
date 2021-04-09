@@ -57,8 +57,8 @@ public class LLVMLibDiffFinder {
 										connector.insertIntoLibDiffs(problem.getId(), old_version, new_version,
 												header.getName(), type,
 												demangleType(problem.getChange().getTarget()),
-												problem.getChange().getOld_value(), problem.getChange().getOld_size(),
-												problem.getChange().getNew_value(), problem.getChange().getParam_pos());
+												demangleType(problem.getChange().getOld_value()), problem.getChange().getOld_size(),
+														demangleType(problem.getChange().getNew_value()), problem.getChange().getParam_pos());
 									}
 								}
 							}
@@ -85,8 +85,8 @@ public class LLVMLibDiffFinder {
 										connector.insertIntoLibDiffs(problem.getId(), old_version, new_version,
 												header.getName(), type,
 												demangleType(problem.getChange().getTarget()),
-												problem.getChange().getOld_value(), problem.getChange().getOld_size(),
-												problem.getChange().getNew_value(), problem.getChange().getParam_pos());
+												demangleType(problem.getChange().getOld_value()), problem.getChange().getOld_size(),
+														demangleType(problem.getChange().getNew_value()), problem.getChange().getParam_pos());
 									}
 								}
 							}

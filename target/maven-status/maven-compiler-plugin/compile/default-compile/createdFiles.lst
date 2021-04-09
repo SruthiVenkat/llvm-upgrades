@@ -5,7 +5,11 @@ xmlreader/domain/Report.class
 xmlreader/domain/Symbol.class
 xmlreader/domain/Library.class
 DatabaseConnector.class
+DiffCSVWriter.class
 LLVMLibDiffFinder.class
+xmlreader/domain/Version2.class
 xmlreader/domain/ProblemsWithTypes.class
-xmlreader/domain/Type.class
+xmlreader/domain/TestInfo.class
 xmlreader/domain/Change.class
+xmlreader/domain/Version1.class
+xmlreader/domain/Type.class

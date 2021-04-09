@@ -1,0 +1,100 @@
+Added_Pure_Virtual_Method,Pure virtual method @target has been added to this class,
+Removed_Pure_Virtual_Method,Pure virtual method @target has been removed from this class,
+Overridden_Virtual_Method,Virtual method @old_value has been overridden by @new_value,
+Overridden_Virtual_Method_B,Virtual method @old_value has been overridden by @new_value,
+Enum_Member_Name,Name of member with value @target has been changed from @old_value to @new_value,"Header File, Type(Enum Name), Old Value, New Value / Replace old with new value"
+Enum_Member_Value,Value of member @target has been changed from @old_value to @new_value,No effect
+Enum_Member_Removed,The member @target has been removed,
+Enum_Last_Member_Value,Value of member @target has been changed from @old_value to @new_value,No effect
+Enum_Private_Member_Value,Value of private member @target has been changed from @old_value to @new_value,No effect
+Added_Base_Class,Base class @target has been added,
+Removed_Base_Class,Base class @target has been removed,
+DataType_Type,Type of this type has been changed from @old_value to @new_value,
+Moved_Field,The relative position of field @target has been changed from @old_value to @new_value,No effect
+Added_Field,Field @target has been added to this type,
+Added_Union_Field,Field @target has been added to this type,No effect
+Removed_Field,Field @target has been removed from this type,
+Removed_Union_Field,Field @target has been removed from this union,
+Field_Type,Type of field @target has been changed from @old_value to @new_value,
+Used_Reserved_Field,Reserved field @target has been replaced by @new_value.,No effect?
+Renamed_Field,Field @target has been renamed to @new_value,"Header File, Type, Old Value(@target), New Value(@new_value) / Replace old with new value"
+Field_BaseType,Base type of field @target has been changed from @old_value to @new_value,
+Field_PointerLevel,The pointer level of field @target has been increased from @old_value to @new_value,
+Typedef_BaseType,Base type has been changed from @old_value to @new_value,
+Typedef_BaseType_Format,Base type has been changed from @old_value to @new_value of different format,
+Added_Symbol,,
+Removed_Symbol,,
+Method_Became_Static,Method became static,No effect?
+Method_Became_Non_Static,Method became non-static,
+Parameter_Default_Value_Changed,The default argument of @param_pos parameter @target has been changed from @old_value to @new_value,No effect
+Parameter_Default_Value_Removed,The default argument @old_value of @param_pos parameter @target has been removed,
+Parameter_Default_Value_Added,The default argument @new_value of @param_pos parameter @target has been added,No effect
+Parameter_Type,Type of @param_pos parameter @target has been changed from @old_value to @new_value,
+Parameter_Type_Format,Type of parameter @target has been changed from @old_value to @new_value of different format,
+Parameter_BaseType_Format,Base type of parameter @target has been changed from @old_value to @new_value of different format,
+Parameter_BaseType,Base type of @param_pos parameter @target has been changed from @old_value to @new_value,
+Parameter_Became_Non_Const,Base type of @param_pos parameter @target has been changed from @old_value to @new_value,
+Parameter_Removed_Const,Type of @param_pos parameter @target has been changed from @old_value to @new_value (removed const qualifier),
+Return_Type_Became_Const,Type of return value became const (has been changed from @old_value to @new_value),
+Return_Type_Added_Const,Added **const** qualifier to return value (has been changed from @old_value to @new_value),
+Parameter_PointerLevel,The pointer level of @param_pos parameter @target has been increased from @old_value to @new_value,
+Return_Type,Type of return value has been changed from @old_value to @new_value,
+Return_Type_From_Void,Type of return value has been changed from void to @new_value,No effect
+Global_Data_Type,Type of this global data has been changed from @old_value to @new_value,
+Global_Data_Type_Format,Type of this global data has been changed from @old_value to @new_value of different format,
+Return_Type_Became_Void,Type of return value has been changed from @old_value (@old_size) to void,
+Global_Data_Became_Non_Const,This global data became non-const,No effect
+Global_Data_Removed_Const,Removed **const** qualifier from the type of this global data,No effect
+Global_Data_Became_Const,This global data became const,
+Global_Data_Added_Const,Added **const** qualifier to the type of this global data,
+Return_BaseType,Base type of return value has been changed from @old_value to @new_value,
+Return_PointerLevel,The pointer level of return value has been increased from @old_value to @new_value,
+Removed_Parameter,@param_pos parameter @target has been removed from the calling stack,
+Removed_Unnamed_Parameter,Parameter @target of type @param_type has been removed from the calling stack,
+Added_Parameter,Parameter @target of type @param_type has been added to the calling stac,
+Added_Unnamed_Parameter,@param_pos parameter @target has been added to the calling stack,
+Removed_Middle_Parameter,@param_pos middle parameter @target has been removed from the calling stack,
+Removed_Middle_Unnamed_Parameter,Middle parameter @target of type @param_type has been removed from the calling stack,
+Added_Middle_Parameter,Parameter @target of type @param_type has been added to the calling stack at the middle position,
+Added_Middle_Unnamed_Parameter,@param_pos parameter @target has been added to the calling stack at the middle position,
+Renamed_Parameter,@param_pos parameter @target has been renamed to @new_value,No effect
+Changed_Constant,The value of constant @target has been changed from @old_value to @new_value,
+Added_Constant,The constant @target with value @new_value has been added,No effect
+Removed_Constant,The constant @target with value @old_value has been removed,
+Field_Type_Format,Type of field @target has been changed from @old_value to @new_value of different format,
+Field_BaseType_Format,Base type of field @target has been changed from @old_value to @new_value of different format,
+Return_Type_Format,Type of return value has been changed from @old_value to @new_value of different format,
+Return_BaseType_Format,Base type of return value has been changed from @old_value to @new_value of different format,
+Parameter_Became_Non_VaList,Type of @param_pos parameter has been changed from ... (va_list) to @new_value,
+Parameter_Became_VaList,Type of @param_pos parameter @target has been changed from @old_value to ... (va_list),No effect
+Added_Enum_Member,The member @target with value @new_value has been added,No effect
+Symbol_Changed_Parameters,Parameters list has been changed,
+Method_Became_Non_Const,Method became non-const,
+Method_Became_Const,Method became const,No effect
+Method_Became_Volatile,Method became volatile,No effect
+Method_Became_Non_Volatile,Method became non-volatile,No effect
+Parameter_Became_Restrict,Parameter @target became restric,No effect
+Parameter_Became_Non_Restrict,Parameter @target became non-restrict,No effect
+Field_Became_Volatile,Field @target became volatile,No effect
+Field_Became_Non_Volatile,Field @target became non-volatile,No effect
+Return_Value_Became_Volatile,Return value became volatile,No effect
+Parameter_Became_Non_Volatile,Parameter @target became non-volatile,No effect
+Global_Data_Value_Changed,The initial value of this global data has been changed from @old_value to @new_value,No effect
+Field_Became_Mutable,Field @target became **mutable**,No effect
+Field_Became_Non_Mutable,Field @target became **non-mutable**,
+Removed_Const_Overload,The **const** overload of the method @target has been removed from this class,
+Method_Became_Private,This method became **private**,
+Method_Became_Protected,This method became **protected**,
+Method_Became_Public,This method became **public**,No effect
+Global_Data_Became_Private,This global data became **private**,
+Global_Data_Became_Protected,This global data became **protected**,
+Global_Data_Became_Public,This global data became **public**,No effect
+Field_Became_Const,Field @target became **const**,
+Field_Became_Non_Const,Field @target became **non-const**,No effect
+Field_Added_Const,Added **const** qualifier to field @target,
+Field_Removed_Const,Removed **const** qualifier from field @target,No effect
+Field_Became_Private,Field @target became **private**,
+Field_Became_Protected,Field @target became **protected**,
+Virtual_Method_Became_Pure,Virtual method @target became **pure**,
+Virtual_Method_Became_Non_Pure,Virtual method @target became **non-pure**,No effect
+Type_Became_Opaque,This type became **opaque**,

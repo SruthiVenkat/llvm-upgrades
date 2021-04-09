@@ -5,6 +5,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.SQLIntegrityConstraintViolationException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import xmlreader.domain.LibDiffsModel;
 
 /**
  * 
@@ -161,7 +165,25 @@ public class DatabaseConnector {
 		}
 		return id;
 	}
-
+	
+	public List<LibDiffsModel> getLibDiffs(String problem, long lib_versions_id) {
+		List<LibDiffsModel> libDiffsRowList = new ArrayList<LibDiffsModel>();
+		String SQL = "SELECT header, type, target, old_value, old_size, new_value, param_pos from lib_diffs where lib_versions_id = ? and problem_id in (select id from problem_ids where problem ilike ?);";
+		try (PreparedStatement pstmt = conn.prepareStatement(SQL)) {
+			pstmt.setLong(1, lib_versions_id);
+			pstmt.setString(2, problem);
+			ResultSet rs = pstmt.executeQuery();
+			while (rs.next()) {
+				LibDiffsModel libDiffsModel = new LibDiffsModel((String)rs.getObject(1), (String)rs.getObject(2), (String)rs.getObject(3), (String)rs.getObject(4), (String)rs.getObject(5),
+						(String)rs.getObject(6), (String)rs.getObject(7));
+				libDiffsRowList.add(libDiffsModel);
+			}
+		} catch (SQLException ex) {
+			ex.printStackTrace();
+		}
+		return libDiffsRowList;
+	}
+	
 	public long getProblemFromProblemIdsTable(String problem) {
 		String SQL = "SELECT id from problem_ids where problem = ?;";
 		long id = 0;
